@@ -33,10 +33,10 @@ namespace Garen
             }
 
             // Initialize the classes that we need
+            Events.Initialize();
             Config.Initialize();
             SpellManager.Initialize();
             ModeManager.Initialize();
-            Events.Initialize();
             WelcomeMsg();
         }
 
