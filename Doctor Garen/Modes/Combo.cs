@@ -44,7 +44,7 @@ namespace Garen.Modes
                 }
             }
 
-            if (Settings.UseE && E.IsReady() && !Player.HasBuff("GarenE") && !Player.HasBuff("GarenQ") && (Player.Instance.Distance(target) < E.Range - 25))
+            if (Settings.UseE && E.IsReady() && !Player.HasBuff("GarenE") && !Player.HasBuff("GarenQ") && (Player.Instance.Distance(target) < E.Range - 25) && !Q.isReady())
             {
                 E.Cast();
             }
